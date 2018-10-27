@@ -1,27 +1,14 @@
 package com.example.youtube.models;
 
-import javax.persistence.*;
-
-@Entity
-@Table(name = "user", schema = "public")
-public class User{
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class UserRegistrationReplay {
     private String login;
     private String password;
     private String name;
     private String lastname;
     private String mail;
     private String registrationNumber;
+    private String registrationStatus;
 
-    public String getRegistrationNumber() {
-        return registrationNumber;
-    }
-
-    public void setRegistrationNumber(String registrationNumber) {
-        this.registrationNumber = registrationNumber;
-    }
 
     public String getLogin() {
         return login;
@@ -61,5 +48,20 @@ public class User{
 
     public void setMail(String mail) {
         this.mail = mail;
+    }
+
+    public String getRegistrationNumber() {
+        return registrationNumber;
+    }
+
+    public void setRegistrationNumber(String registrationNumber) {
+        this.registrationNumber = registrationNumber;
+    }
+    public String getRegistrationStatus() {
+        return registrationStatus;
+    }
+
+    public void setRegistrationStatus(String registrationStatus) {
+        this.registrationStatus = registrationStatus;
     }
 }
