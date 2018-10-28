@@ -1,4 +1,4 @@
-package com.example.youtube.controllers;
+package com.example.youtube.service;
 
 import com.example.youtube.models.UserRegistration;
 import org.springframework.stereotype.Controller;
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public class UserDeleteController {
+public class UserDeleteService {
     @RequestMapping(method = RequestMethod.DELETE,value = "/delete/user/{user_nr}")
 
     @ResponseBody

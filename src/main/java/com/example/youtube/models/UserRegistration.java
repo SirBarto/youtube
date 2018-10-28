@@ -11,21 +11,13 @@ public class UserRegistration {
         userRecords = new ArrayList<>(); //<User>
     }
     public static UserRegistration getInstance() {
-
         if(ur == null) {
-
             ur = new UserRegistration();
-
             return ur;
-
         }
-
         else {
-
             return ur;
-
         }
-
     }
 
     public void add(User std) {

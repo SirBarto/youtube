@@ -1,4 +1,4 @@
-package com.example.youtube.controllers;
+package com.example.youtube.service;
 
 import com.example.youtube.models.User;
 import com.example.youtube.models.UserRegistration;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public class UserUpdateController {
+public class UserUpdateService {
     @RequestMapping(method = RequestMethod.PUT,value = "/update/user")
 
     @ResponseBody
